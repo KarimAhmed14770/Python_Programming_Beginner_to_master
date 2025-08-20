@@ -48,3 +48,28 @@ for i in range(1,rows+1):
         if(j<i):
             print("* ",end='')
     print("")
+
+rows=int(input('enter number of rows: '))
+for i in range(rows):
+    for j in range(rows):
+        if(j>=i):
+            print("* ",end='')
+    print("")
+
+rows=int(input('enter number of rows: '))
+for i in range(rows): #0 1 2 3 4
+    for j in range(rows): #0 1 2 3 4
+        if (j >= i):
+            print("*  ", end='')
+        else:
+            print("   ",end='')
+    print("")
+
+rows=int(input('enter number of rows: '))
+for i in range(rows): #0 1 2 3 4
+    for j in range(rows): #0 1 2 3 4
+        if ((rows-1 -j) <= i):
+            print("*  ", end='')
+        else:
+            print("   ",end='')
+    print("")
