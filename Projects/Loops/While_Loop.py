@@ -59,3 +59,37 @@ while counter<len(list1):
     counter+=1
 print(f"max is: {max_}\tmin is: {min_}")
 
+# break and continue statements
+#break statement is used to exit the loop immediately once hit
+#continue statement is used to start the next iteration of a loop immediately once hit
+counter=0
+while True:
+    counter+=1
+    if(counter==10):
+        break
+    elif (counter%2==0):
+        continue
+    print(counter)
+
+#else suite with while loop
+#when the while condition turns to false we will perform the else once,
+# this won't work when loop is exited with break
+counter=0
+while counter<10:
+    counter+=1
+    if (counter%2==0):
+        continue
+    print(counter)
+else:
+    print("loop is terminated successfully")
+
+counter=0
+while True:
+    counter+=1
+    if(counter==10):
+        break
+    elif (counter%2==0):
+        continue
+    print(counter)
+else:
+    print("loop is terminated successfully")
