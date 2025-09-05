@@ -11,3 +11,8 @@ while counter<n:
 
 L1.extend(L2)
 print(L1)
+
+#other solution
+L1=[10,20,30,40,50,60,70]
+L2=L1[n:]+L1[:n]
+print(L2)
